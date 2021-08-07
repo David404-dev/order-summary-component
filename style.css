@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  background-color: var(--veryPaleBlue);
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  background-color: white;
+  min-width: 375px;
+  width: 30%;
+  margin: 10em auto 2em auto;
+  padding-bottom: 2em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.container > img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h1 {
+  width: 50%;
+  margin: 1em auto;
+  font-weight: 700;
+  color: var(--darkBlue);
+}
+
+h1 + p {
+  width: 60%;
+  margin: 0 auto 2em auto;
+  color: var(--desaturatedBlue);
+}
+
+.plan {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+.price > p {
+  color: black;
+  font-weight: 700;
+  margin: 0 5em 0 1em;
+}
+
+.price > span {
+  margin-right: 4em;
+}
+.plan a {
+  align-self: center;
+  font-weight: 700;
+}
+
+.plan a:hover,
+.plan a:focus {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+button {
+  display: block;
+  margin: 1em auto;
+  padding: 1em 2em;
+  cursor: pointer;
+  width: 70%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 250ms;
+}
+
+.payment {
+  color: var(--veryPaleBlue);
+  background-color: var(--brightBlue);
+  font-weight: 700;
+}
+
+.payment:hover,
+.payment:focus {
+  opacity: 0.5;
+}
+
+.cancel {
+  font-weight: 700;
+  color: var(--desaturatedBlue);
+}
+
+.cancel:hover,
+.cancel:focus {
+  background-color: white;
+  color: var(--darkBlue);
+}
